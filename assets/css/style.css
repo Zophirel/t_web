@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
+
+html{
+    height: 100%;
+    width: 100%;
+    background: url('../img/homebg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#homePageLayout{
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 100px;
+}
+
+.slogan{
+    font-size: 7rem; 
+    font-weight: 700; 
+    line-height: 100%; 
+    font-family: 'Open Sans';
+    color: white;
+    margin: 0;   
+    white-space: nowrap;
+}
+
+.loginForm{
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#loginHeader{
+    font-family: 'Open Sans';
+    font-weight: 500;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+
+#loginInputs{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.loginField{
+    
+    background-color: #E4E7E8;
+    border: none;
+    width: 250px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.loginLabel{
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    font-family: 'Open Sans';
+}
+
+#formBtn{
+    height: 50px;
+    width: 250px;
+    border: none;
+    background-color: #181816;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+#formBtn > p{
+    color: white;
+    font-family: 'Open Sans';
+}
+
+@media screen and (max-width: 1200px) {
+    .slogan{
+        font-size: 3rem; 
+        font-weight: 700; 
+        line-height: 100%; 
+        font-family: 'Open Sans';
+        color: white;
+        margin: 0;   
+        white-space: nowrap;
+    }
+    #homePageLayout{
+        display: flex;
+        height: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        gap: 50px;
+    }
+}
