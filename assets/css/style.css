@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
 
-html{
-    height: 100%;
-    width: 100%;
+body{
     background: url('../img/homebg.jpg');
     background-size: cover;
     background-position: center;
@@ -20,27 +18,25 @@ html{
 
 .slogan{
     font-size: 7rem; 
-    font-weight: 700; 
-    line-height: 100%; 
+    font-weight: 700;  
     font-family: 'Open Sans';
-    color: white;
-    margin: 0;   
+    color: white;   
     white-space: nowrap;
+    line-height: 100%;
+    width: 350px;
 }
 
 .loginForm{
     width: 350px;
     height: 450px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #loginHeader{
     font-family: 'Open Sans';
     font-weight: 500;
-    margin-top: 50px;
-    margin-left: 50px;
-
+    margin: 0;
 }
 
 #loginInputs{
@@ -100,4 +96,19 @@ html{
         align-content: center;
         gap: 50px;
     }
+}
+
+.signupHint{
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.signupHint > a{
+    text-decoration: none;
+}
+
+#loginCard{
+    width: 400px;
+    padding: 20px 20px 20px 20px; /* top right left bottom*/
 }
