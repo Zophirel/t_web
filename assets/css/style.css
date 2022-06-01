@@ -7,36 +7,30 @@ body{
 }
 
 #homePageLayout{
-    display: flex;
+    display: grid;
+    grid-template-areas:'a b';
     height: 100%;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
-    align-content: center;
-    gap: 100px;
-}
+    align-items: center;
+    column-gap: 100px;
 
-.slogan{
-    font-size: 7rem; 
-    font-weight: 700;  
-    font-family: 'Open Sans';
-    color: white;   
-    white-space: nowrap;
-    line-height: 100%;
-    width: 350px;
-}
-
-.loginForm{
-    width: 350px;
-    height: 450px;
-    background-color: white;
-    border-radius: 5px;
 }
 
 #loginHeader{
     font-family: 'Open Sans';
     font-weight: 500;
     margin: 0;
+}
+
+.slogan{   
+    grid-area: a;
+    justify-self: center;
+    font-size: 6vw; 
+    font-weight: 700;  
+    font-family: 'Open Sans';
+    color: white;   
+    white-space: nowrap;
+    line-height: 100%;
 }
 
 #loginInputs{
@@ -46,7 +40,6 @@ body{
 }
 
 .loginField{
-    
     background-color: #E4E7E8;
     border: none;
     width: 250px;
@@ -77,38 +70,47 @@ body{
     font-family: 'Open Sans';
 }
 
-@media screen and (max-width: 1200px) {
-    .slogan{
-        font-size: 3rem; 
-        font-weight: 700; 
-        line-height: 100%; 
-        font-family: 'Open Sans';
-        color: white;
-        margin: 0;   
-        white-space: nowrap;
-    }
-    #homePageLayout{
-        display: flex;
-        height: 100%;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-        gap: 50px;
-    }
-}
-
-.signupHint{
-    text-align: center;
-    font-family: 'Open Sans';
-    font-weight: 400;
-}
-
-.signupHint > a{
-    text-decoration: none;
-}
-
 #loginCard{
-    width: 400px;
+    grid-area: b;
+    justify-self: center;
     padding: 20px 20px 20px 20px; /* top right left bottom*/
+    height: 25vw;
+    width: 20vw;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .slogan{
+        font-size: 84px;
+    }
+
+    #loginCard{
+        height: 350;
+        width: 280px;
+    }
+    #loginCardCtn{
+        justify-content:center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .slogan{
+        font-size: 10vw;
+        align-self: end;
+    }
+
+    #loginCard{
+        height: 350;
+        width: 280px;
+    }
+    #loginCardCtn{
+        justify-content:center;
+    }
+
+    #homePageLayout{
+        display: grid;
+        grid-template-areas: 'a'
+                             'b';
+    }
 }
