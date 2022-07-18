@@ -1,0 +1,53 @@
+body{
+    background: url('../img/homebg.jpg');
+    background-color:rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+}
+
+#homePageLayout{
+    display: grid;
+    grid-template-areas:'a b';
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+}
+
+.slogan{   
+    grid-area: a;
+    justify-self: center;
+    font-size: 6vw; 
+    font-weight: 700;  
+    font-family: 'Montserrat';
+    color: white;   
+    white-space: nowrap;
+    line-height: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    #loginCardCtn{
+        justify-content:center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .slogan{
+        font-size: 56px;
+        align-self: end;
+    }
+
+    #loginCard{
+        align-self: start;
+    }
+    #loginCardCtn{
+        justify-content:center;
+    }
+
+    #homePageLayout{
+        display: grid;
+        grid-template-areas: 'a'
+                             'b';
+    }
+}

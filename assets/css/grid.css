@@ -1,0 +1,14 @@
+
+#container{
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: repeat(20, 2vw);
+    grid-template-rows: repeat(10, 2vw);
+
+
+}
+
+.ombrellone{
+    background-color: #5AD9AB;
+}

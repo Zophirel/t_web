@@ -1,0 +1,48 @@
+<svg width="47" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#Vector__a)">
+        <path d="m35.099 40 11.71-20h-23.42l11.71 20Z" fill="url(#Vector__b)" />
+        <path d="m23.404 20-11.71 20h23.42l-11.71-20Z" fill="url(#Vector__c)" />
+        <path d="M23.404 20 11.694 0h23.42l-11.71 20Z" fill="url(#Vector__d)" />
+        <path d="m35.099 0 11.71 20h-23.42l11.71-20Z" fill="url(#Vector__e)" />
+        <path d="m11.71 40 11.71-20H0l11.71 20Z" fill="#FFF2E9" />
+        <path d="m11.71 0 11.71 20H0L11.71 0Z" fill="url(#Vector__f)" />
+        <path
+            d="M25.581 20.028c0 1.227-.982 2.222-2.192 2.222-1.211 0-2.193-.995-2.193-2.222 0-1.227.982-2.222 2.193-2.222 1.21 0 2.192.995 2.192 2.222Z"
+            fill="#F0F0F0" />
+    </g>
+    <defs>
+        <linearGradient id="Vector__b" x1="23.404" y1="0" x2="23.404" y2="53.333" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#fff" />
+            <stop offset="1" stop-color="#F8AF7A" />
+        </linearGradient>
+        <linearGradient id="Vector__c" x1="-9.464" y1="-48.889" x2="24.249" y2="53.054" gradientUnits="userSpaceOnUse">
+            <stop offset=".474" stop-color="#FAFF12" />
+            <stop offset="1" stop-color="#F69C5A" />
+        </linearGradient>
+        <linearGradient id="Vector__d" x1="23.404" y1="0" x2="23.404" y2="53.333" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#fff" />
+            <stop offset="1" stop-color="#FDB886" />
+        </linearGradient>
+        <linearGradient id="Vector__e" x1="23.404" y1="0" x2="23.404" y2="53.333" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FEF98D" />
+            <stop offset="1" stop-color="#ED7E2D" />
+            <stop offset="1" stop-color="#FFC69C" />
+        </linearGradient>
+        <linearGradient id="Vector__f" x1="23.404" y1="0" x2="23.404" y2="53.333" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFF386" />
+            <stop offset=".88" stop-color="#FFB444" />
+            <stop offset="1" stop-color="#F69C5B" />
+        </linearGradient>
+        <filter id="Vector__a" x="0" y="-1" width="46.809" height="41" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+            <feOffset dy="-1" />
+            <feGaussianBlur stdDeviation="4.5" />
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+            <feColorMatrix values="0 0 0 0 0.666667 0 0 0 0 0.32 0 0 0 0 0 0 0 0 0.25 0" />
+            <feBlend in2="shape" result="effect1_innerShadow_44_242" />
+        </filter>
+    </defs>
+</svg>

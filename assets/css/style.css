@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family= :wght@600;800&family=Open+Sans:wght@400;500;700&display=swap');
-
 body{
     background: url('../img/homebg.jpg');
+    background-color:rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-position: center;
 }
@@ -13,10 +12,10 @@ body{
     justify-content: center;
     align-items: center;
     column-gap: 100px;
-
 }
 
 #loginHeader{
+    align-self: start;
     font-family: 'Open Sans';
     font-weight: 500;
     margin: 0;
@@ -27,7 +26,8 @@ body{
     justify-self: center;
     font-size: 6vw; 
     font-weight: 700;  
-    font-family: 'Open Sans';
+    font-family: 'Montserrat';
+    font-weight: 700;
     color: white;   
     white-space: nowrap;
     line-height: 100%;
@@ -69,23 +69,38 @@ body{
 }
 
 #loginCard{
+    
     grid-area: b;
     display: grid;
-    grid-template-areas: 'a'
-                         'b'
-                         'c'
-                         'd';
+    column-gap: 10px;
+    grid-template-areas: "header"
+                         "email"
+                         "password"
+                         "button";
     justify-self: center;
-    padding: 0 50 0 50; /* top right left bottom*/
+    padding: 40px 50px 50px 50px; /* top right left bottom*/
     height: 440px;
     width: 350px;
-    align-content: center;
+    transition: height 0.3s;
+}
+
+#signupCard{
+    grid-area: b;
+    display: grid;
+    column-gap: 10px;
+    grid-template-areas: "header header"
+                        "nome cognome"
+                        "email email"
+                        "password password"
+                        "button button";
+    justify-self: center;
+    padding: 40px 50px 50px 50px; /* top right left bottom*/
+    height: 500px;
+    width: 350px;
+    transition: height 0.3s;
 }
 
 @media screen and (max-width: 1400px) {
-    #loginCard{
-
-    }
     #loginCardCtn{
         justify-content:center;
     }
@@ -113,7 +128,7 @@ body{
 }
 
 #loginBtn{
-    margin-top: 1.5vw;
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -128,4 +143,39 @@ body{
 
 #signupLink{
     text-decoration: none;
+}
+
+#cardHeader{
+    grid-area: header;
+}
+
+#nomeCtn{
+    opacity: 0;
+    display: none;
+    grid-area: nome;
+    transition: opacity display 0.3s;
+}
+
+#cognomeCtn{
+    justify-self: center;
+    display: none;
+    width: 125px;
+    grid-area: cognome;
+    opacity: 0;
+    transition: opacity  0.3s;
+}
+
+#emailCtn{
+    align-self: center;
+    grid-area: email;
+}
+
+#passwordCtn{
+    align-self: center;
+    grid-area: password;
+}
+
+#btnCtn{
+    align-self: center;
+    grid-area: button;
 }
