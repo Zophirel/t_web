@@ -4,7 +4,7 @@ class Database{
 	private $host = '127.0.0.1';
 	private $db_name = 'maredb';
 	private $username = 'root';
-	private $password = '@Bakugou99';
+	private $password = 'fakepassword';
 	public $conn;
 	
 	public function getConnection(){
